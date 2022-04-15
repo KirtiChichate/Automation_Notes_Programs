@@ -1,0 +1,18 @@
+==========CT Testing Parallel=============
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test  name="FirefoxTest">
+  <parameter name="browserName" value="firefox"/>
+  <classes>
+  <class name="CrossBrowserTest.CT1"/>
+  </classes>
+  </test> <!-- Test -->
+  <test name="ChromeTest">
+  <parameter name="browserName" value="chrome"/>
+  <classes>
+  <class name="CrossBrowserTest.CT1"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+================END======================
